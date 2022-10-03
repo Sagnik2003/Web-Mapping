@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f2012dfc716b345ae7dc31ffe138a74 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9f2012dfc716b345ae7dc31ffe138a74" ></div>
+        
+</body>
+<script>    
+    
+            var map_9f2012dfc716b345ae7dc31ffe138a74 = L.map(
+                "map_9f2012dfc716b345ae7dc31ffe138a74",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7986d0b9e61658af59bd87ce066e042 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var marker_3e6499f455fb38316253acd0f2cd4006 = L.marker(
+                [48.7767982, -121.810997],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_9f446a9d670309811d190d6e41aaf3f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3e6499f455fb38316253acd0f2cd4006.setIcon(icon_9f446a9d670309811d190d6e41aaf3f8);
+        
+    
+        var popup_49090243aa74a0ac0e0c1c411430d38f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_c20da427b804923859a0f488f5e45e48 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmFrZXIgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkJha2VyPC9hPjxicj4KPGk+SGVpZ2h0OiAzMjg1LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_49090243aa74a0ac0e0c1c411430d38f.setContent(i_frame_c20da427b804923859a0f488f5e45e48);
+        
+
+        marker_3e6499f455fb38316253acd0f2cd4006.bindPopup(popup_49090243aa74a0ac0e0c1c411430d38f)
+        ;
+
+        
+    
+    
+            marker_3e6499f455fb38316253acd0f2cd4006.bindTooltip(
+                `<div>
+                     ('Baker', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6a2f85cdc697d0a471680d4d183ad8f = L.marker(
+                [48.1118011, -121.1110001],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e2cde2b7d0ab2dcf828755a175598660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b6a2f85cdc697d0a471680d4d183ad8f.setIcon(icon_e2cde2b7d0ab2dcf828755a175598660);
+        
+    
+        var popup_061f5f9abb9310d5e3b6cceaa5231913 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_eb24e271737af05b9d37018d6a81a584 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyR2xhY2llciBQZWFrIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5HbGFjaWVyIFBlYWs8L2E+PGJyPgo8aT5IZWlnaHQ6IDMyMTMuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_061f5f9abb9310d5e3b6cceaa5231913.setContent(i_frame_eb24e271737af05b9d37018d6a81a584);
+        
+
+        marker_b6a2f85cdc697d0a471680d4d183ad8f.bindPopup(popup_061f5f9abb9310d5e3b6cceaa5231913)
+        ;
+
+        
+    
+    
+            marker_b6a2f85cdc697d0a471680d4d183ad8f.bindTooltip(
+                `<div>
+                     ('Glacier Peak', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a72ace360267e3600ec90dc6ab8c26 = L.marker(
+                [46.8698006, -121.7509995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_5e37465655155e004ee8298d72207228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e1a72ace360267e3600ec90dc6ab8c26.setIcon(icon_5e37465655155e004ee8298d72207228);
+        
+    
+        var popup_8b1065d854216005af074c93d2c18616 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_7428b808f3951f082c782e4166c442a8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyUmFpbmllciB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+UmFpbmllcjwvYT48YnI+CjxpPkhlaWdodDogNDM5Mi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_8b1065d854216005af074c93d2c18616.setContent(i_frame_7428b808f3951f082c782e4166c442a8);
+        
+
+        marker_e1a72ace360267e3600ec90dc6ab8c26.bindPopup(popup_8b1065d854216005af074c93d2c18616)
+        ;
+
+        
+    
+    
+            marker_e1a72ace360267e3600ec90dc6ab8c26.bindTooltip(
+                `<div>
+                     ('Rainier', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f72d300d9841e07fad6d2c1924d6d89a = L.marker(
+                [46.1997986, -122.1809998],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_779e74b2f6a604491669b19c8eb68f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f72d300d9841e07fad6d2c1924d6d89a.setIcon(icon_779e74b2f6a604491669b19c8eb68f6f);
+        
+    
+        var popup_1e0fb7f462c7fe4bae1140a2bab60f33 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_69aec92c3dff269592fa42884ce13e65 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU3QuIEhlbGVucyB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+U3QuIEhlbGVuczwvYT48YnI+CjxpPkhlaWdodDogMjU0OS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1e0fb7f462c7fe4bae1140a2bab60f33.setContent(i_frame_69aec92c3dff269592fa42884ce13e65);
+        
+
+        marker_f72d300d9841e07fad6d2c1924d6d89a.bindPopup(popup_1e0fb7f462c7fe4bae1140a2bab60f33)
+        ;
+
+        
+    
+    
+            marker_f72d300d9841e07fad6d2c1924d6d89a.bindTooltip(
+                `<div>
+                     ('St. Helens', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07573def696fffea1b599ea287c0198b = L.marker(
+                [46.2057991, -121.4909973],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_99004c89ca547b776ea3d5630e97ad25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_07573def696fffea1b599ea287c0198b.setIcon(icon_99004c89ca547b776ea3d5630e97ad25);
+        
+    
+        var popup_7c2d5f0a3920e170e6f545ee73b2ff8e = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_eaf9bdcbf7ef4d13b2661b85a6109bb9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQWRhbXMgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkFkYW1zPC9hPjxicj4KPGk+SGVpZ2h0OiAzNzQyLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_7c2d5f0a3920e170e6f545ee73b2ff8e.setContent(i_frame_eaf9bdcbf7ef4d13b2661b85a6109bb9);
+        
+
+        marker_07573def696fffea1b599ea287c0198b.bindPopup(popup_7c2d5f0a3920e170e6f545ee73b2ff8e)
+        ;
+
+        
+    
+    
+            marker_07573def696fffea1b599ea287c0198b.bindTooltip(
+                `<div>
+                     ('Adams', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e1e10241dc78658c288bb1ad0a962c9 = L.marker(
+                [45.8797989, -122.0810013],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_b250f88bae32eea00999f89dc39ae372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2e1e10241dc78658c288bb1ad0a962c9.setIcon(icon_b250f88bae32eea00999f89dc39ae372);
+        
+    
+        var popup_2a8361db72811fd4328c0ffc1ce829e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_9f0f12fefabe830bcf6294b3574f250c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyV2VzdCBDcmF0ZXIgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPldlc3QgQ3JhdGVyPC9hPjxicj4KPGk+SGVpZ2h0OiAxMzI5LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_2a8361db72811fd4328c0ffc1ce829e0.setContent(i_frame_9f0f12fefabe830bcf6294b3574f250c);
+        
+
+        marker_2e1e10241dc78658c288bb1ad0a962c9.bindPopup(popup_2a8361db72811fd4328c0ffc1ce829e0)
+        ;
+
+        
+    
+    
+            marker_2e1e10241dc78658c288bb1ad0a962c9.bindTooltip(
+                `<div>
+                     ('West Crater', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_884bbf62d56e0c5584e71395d17545b8 = L.marker(
+                [45.9297981, -121.8209991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_b689a02b51f0b7fc10022784655be7b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_884bbf62d56e0c5584e71395d17545b8.setIcon(icon_b689a02b51f0b7fc10022784655be7b7);
+        
+    
+        var popup_4aa9f9d1c12a4805e0a2c03edccb8d65 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_019daa72e1fca786072b17ad331c58b5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySW5kaWFuIEhlYXZlbiB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+SW5kaWFuIEhlYXZlbjwvYT48YnI+CjxpPkhlaWdodDogMTgwNi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_4aa9f9d1c12a4805e0a2c03edccb8d65.setContent(i_frame_019daa72e1fca786072b17ad331c58b5);
+        
+
+        marker_884bbf62d56e0c5584e71395d17545b8.bindPopup(popup_4aa9f9d1c12a4805e0a2c03edccb8d65)
+        ;
+
+        
+    
+    
+            marker_884bbf62d56e0c5584e71395d17545b8.bindTooltip(
+                `<div>
+                     ('Indian Heaven', 'US-Washington')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2618e0c4c93861dd17cfae0f199dab55 = L.marker(
+                [45.3737984, -121.6910019],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_da6b39bf692fc6394e8a6b931a54ebe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2618e0c4c93861dd17cfae0f199dab55.setIcon(icon_da6b39bf692fc6394e8a6b931a54ebe9);
+        
+    
+        var popup_a63d41585a528689a02f08f8e8da14fc = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_1ea125b3d4c7821f70dc5cc93664fa61 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySG9vZCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+SG9vZDwvYT48YnI+CjxpPkhlaWdodDogMzQyNi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a63d41585a528689a02f08f8e8da14fc.setContent(i_frame_1ea125b3d4c7821f70dc5cc93664fa61);
+        
+
+        marker_2618e0c4c93861dd17cfae0f199dab55.bindPopup(popup_a63d41585a528689a02f08f8e8da14fc)
+        ;
+
+        
+    
+    
+            marker_2618e0c4c93861dd17cfae0f199dab55.bindTooltip(
+                `<div>
+                     ('Hood', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffec2732ec3decc016431e9239024a89 = L.marker(
+                [44.6917992, -121.8010025],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_4ec323743c3ea073a153074cd9cc4dea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ffec2732ec3decc016431e9239024a89.setIcon(icon_4ec323743c3ea073a153074cd9cc4dea);
+        
+    
+        var popup_11873564bced547680d9c2dedc25a9c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_154c997a7d298f3e0b37eb5866961e87 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySmVmZmVyc29uIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5KZWZmZXJzb248L2E+PGJyPgo8aT5IZWlnaHQ6IDMxOTkuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_11873564bced547680d9c2dedc25a9c4.setContent(i_frame_154c997a7d298f3e0b37eb5866961e87);
+        
+
+        marker_ffec2732ec3decc016431e9239024a89.bindPopup(popup_11873564bced547680d9c2dedc25a9c4)
+        ;
+
+        
+    
+    
+            marker_ffec2732ec3decc016431e9239024a89.bindTooltip(
+                `<div>
+                     ('Jefferson', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f582c36e35296467503051fa44114d6e = L.marker(
+                [44.4197998, -121.7710037],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_d6d76f256f804a631e80d688b4640a52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f582c36e35296467503051fa44114d6e.setIcon(icon_d6d76f256f804a631e80d688b4640a52);
+        
+    
+        var popup_5391a1850da78a926b57455e6fcd84b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_ef9227922be3d012060490c6a88a77b1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmx1ZSBMYWtlIENyYXRlciB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+Qmx1ZSBMYWtlIENyYXRlcjwvYT48YnI+CjxpPkhlaWdodDogMTIzMC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5391a1850da78a926b57455e6fcd84b5.setContent(i_frame_ef9227922be3d012060490c6a88a77b1);
+        
+
+        marker_f582c36e35296467503051fa44114d6e.bindPopup(popup_5391a1850da78a926b57455e6fcd84b5)
+        ;
+
+        
+    
+    
+            marker_f582c36e35296467503051fa44114d6e.bindTooltip(
+                `<div>
+                     ('Blue Lake Crater', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7b8261a6db6e4615b18d9a269201463 = L.marker(
+                [44.3797989, -121.9309998],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e27504c0ed723a9c110cf84879149225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7b8261a6db6e4615b18d9a269201463.setIcon(icon_e27504c0ed723a9c110cf84879149225);
+        
+    
+        var popup_0099efcda42c8f59116ee9ac27698fbc = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_bb79b8c5fc204cfade38746bf03172ae = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU2FuZCBNb3VudGFpbiBGaWVsZCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+U2FuZCBNb3VudGFpbiBGaWVsZDwvYT48YnI+CjxpPkhlaWdodDogMTY2NC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_0099efcda42c8f59116ee9ac27698fbc.setContent(i_frame_bb79b8c5fc204cfade38746bf03172ae);
+        
+
+        marker_f7b8261a6db6e4615b18d9a269201463.bindPopup(popup_0099efcda42c8f59116ee9ac27698fbc)
+        ;
+
+        
+    
+    
+            marker_f7b8261a6db6e4615b18d9a269201463.bindTooltip(
+                `<div>
+                     ('Sand Mountain Field', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7d008c1d383a4a60727b1f43034f177 = L.marker(
+                [44.3317986, -121.8310013],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_dbef05c63c71c58a8d2d0545bd3d40ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a7d008c1d383a4a60727b1f43034f177.setIcon(icon_dbef05c63c71c58a8d2d0545bd3d40ef);
+        
+    
+        var popup_c5772903563737918e925dc4df64f973 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_2be2913fcf9ae73472d15dec241f192a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyV2FzaGluZ3RvbiB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+V2FzaGluZ3RvbjwvYT48YnI+CjxpPkhlaWdodDogMjM3Ni4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_c5772903563737918e925dc4df64f973.setContent(i_frame_2be2913fcf9ae73472d15dec241f192a);
+        
+
+        marker_a7d008c1d383a4a60727b1f43034f177.bindPopup(popup_c5772903563737918e925dc4df64f973)
+        ;
+
+        
+    
+    
+            marker_a7d008c1d383a4a60727b1f43034f177.bindTooltip(
+                `<div>
+                     ('Washington', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_078fa32b757ecf73a7e4da162030b786 = L.marker(
+                [44.2848015, -121.8410034],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_56d82ff4a51f59ada522761cc8a009af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_078fa32b757ecf73a7e4da162030b786.setIcon(icon_56d82ff4a51f59ada522761cc8a009af);
+        
+    
+        var popup_9d06b0e41686dcc78a2f6dae639d80c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_d0c298160814a313d802514683388d94 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmVsa25hcCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+QmVsa25hcDwvYT48YnI+CjxpPkhlaWdodDogMjA5NS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_9d06b0e41686dcc78a2f6dae639d80c7.setContent(i_frame_d0c298160814a313d802514683388d94);
+        
+
+        marker_078fa32b757ecf73a7e4da162030b786.bindPopup(popup_9d06b0e41686dcc78a2f6dae639d80c7)
+        ;
+
+        
+    
+    
+            marker_078fa32b757ecf73a7e4da162030b786.bindTooltip(
+                `<div>
+                     ('Belknap', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_322dc5ef3f2bf1a8e85173ef01594ea9 = L.marker(
+                [44.1697998, -121.7710037],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_f8eb1b4334698b1ce06dd08c8b1a584f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_322dc5ef3f2bf1a8e85173ef01594ea9.setIcon(icon_f8eb1b4334698b1ce06dd08c8b1a584f);
+        
+    
+        var popup_18a87d93598df2db99f12dd2a228be67 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_8050447cda9992c6bdcbfd6259fae063 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTm9ydGggU2lzdGVyIEZpZWxkIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5Ob3J0aCBTaXN0ZXIgRmllbGQ8L2E+PGJyPgo8aT5IZWlnaHQ6IDMwNzQuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_18a87d93598df2db99f12dd2a228be67.setContent(i_frame_8050447cda9992c6bdcbfd6259fae063);
+        
+
+        marker_322dc5ef3f2bf1a8e85173ef01594ea9.bindPopup(popup_18a87d93598df2db99f12dd2a228be67)
+        ;
+
+        
+    
+    
+            marker_322dc5ef3f2bf1a8e85173ef01594ea9.bindTooltip(
+                `<div>
+                     ('North Sister Field', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75b65736cdb298462ee31187ef8d6e01 = L.marker(
+                [44.0998001, -121.7710037],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_aaffdecdacdca19622cb2be049b2fe6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_75b65736cdb298462ee31187ef8d6e01.setIcon(icon_aaffdecdacdca19622cb2be049b2fe6a);
+        
+    
+        var popup_117bd3ffe6f26544cddf42893f3be187 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_d287e551f16240d681714664f0efb3d8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU291dGggU2lzdGVyIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5Tb3V0aCBTaXN0ZXI8L2E+PGJyPgo8aT5IZWlnaHQ6IDMxNTcuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_117bd3ffe6f26544cddf42893f3be187.setContent(i_frame_d287e551f16240d681714664f0efb3d8);
+        
+
+        marker_75b65736cdb298462ee31187ef8d6e01.bindPopup(popup_117bd3ffe6f26544cddf42893f3be187)
+        ;
+
+        
+    
+    
+            marker_75b65736cdb298462ee31187ef8d6e01.bindTooltip(
+                `<div>
+                     ('South Sister', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6f29015e6f0ee95b53f5437476438a6 = L.marker(
+                [43.9788017, -121.6809998],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_9e34ba48a8a98c68a8f8f86dc01aeb5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e6f29015e6f0ee95b53f5437476438a6.setIcon(icon_9e34ba48a8a98c68a8f8f86dc01aeb5b);
+        
+    
+        var popup_caf8f59e5dbad8bd97df7fddd815cbd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_fe5f891ab856e0af59c438b284fc5aca = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmFjaGVsb3Igdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkJhY2hlbG9yPC9hPjxicj4KPGk+SGVpZ2h0OiAyNzYzLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_caf8f59e5dbad8bd97df7fddd815cbd9.setContent(i_frame_fe5f891ab856e0af59c438b284fc5aca);
+        
+
+        marker_e6f29015e6f0ee95b53f5437476438a6.bindPopup(popup_caf8f59e5dbad8bd97df7fddd815cbd9)
+        ;
+
+        
+    
+    
+            marker_e6f29015e6f0ee95b53f5437476438a6.bindTooltip(
+                `<div>
+                     ('Bachelor', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b157aafb35f736cc2355d4d4681e9ef2 = L.marker(
+                [43.7218018, -121.2210007],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_9ee81a04155eedf9887edb7181620140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b157aafb35f736cc2355d4d4681e9ef2.setIcon(icon_9ee81a04155eedf9887edb7181620140);
+        
+    
+        var popup_da796f0cf27f2990ecc0c7d318da9cb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_c250d21d03ce3e0d173963f3a99db643 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTmV3YmVycnkgVm9sY2FubyB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+TmV3YmVycnkgVm9sY2FubzwvYT48YnI+CjxpPkhlaWdodDogMjQzNC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_da796f0cf27f2990ecc0c7d318da9cb8.setContent(i_frame_c250d21d03ce3e0d173963f3a99db643);
+        
+
+        marker_b157aafb35f736cc2355d4d4681e9ef2.bindPopup(popup_da796f0cf27f2990ecc0c7d318da9cb8)
+        ;
+
+        
+    
+    
+            marker_b157aafb35f736cc2355d4d4681e9ef2.bindTooltip(
+                `<div>
+                     ('Newberry Volcano', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bed3c45c14e7526f0e70cfdec9b6aba = L.marker(
+                [43.5698013, -121.8209991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_26993df5d70c466cd3227a83371af66f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3bed3c45c14e7526f0e70cfdec9b6aba.setIcon(icon_26993df5d70c466cd3227a83371af66f);
+        
+    
+        var popup_13b4c9cc0eb043a6d9130992c5e1a140 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_15407ab094f84567eb4403d2afc98c33 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRGF2aXMgTGFrZSB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+RGF2aXMgTGFrZTwvYT48YnI+CjxpPkhlaWdodDogMjE2My4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_13b4c9cc0eb043a6d9130992c5e1a140.setContent(i_frame_15407ab094f84567eb4403d2afc98c33);
+        
+
+        marker_3bed3c45c14e7526f0e70cfdec9b6aba.bindPopup(popup_13b4c9cc0eb043a6d9130992c5e1a140)
+        ;
+
+        
+    
+    
+            marker_3bed3c45c14e7526f0e70cfdec9b6aba.bindTooltip(
+                `<div>
+                     ('Davis Lake', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb927e79211fa685f88661ad4f388a6b = L.marker(
+                [43.5119019, -120.8610001],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_041c5dfe356b5272aab14fc71827cc47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eb927e79211fa685f88661ad4f388a6b.setIcon(icon_041c5dfe356b5272aab14fc71827cc47);
+        
+    
+        var popup_6c4cac1e17d35180b9df5f0d8710fa6d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_b6b2c2ba32a2870bf4d36ffbc516fc1a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRGV2aWxzIEdhcmRlbiB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+RGV2aWxzIEdhcmRlbjwvYT48YnI+CjxpPkhlaWdodDogMTY5OC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_6c4cac1e17d35180b9df5f0d8710fa6d.setContent(i_frame_b6b2c2ba32a2870bf4d36ffbc516fc1a);
+        
+
+        marker_eb927e79211fa685f88661ad4f388a6b.bindPopup(popup_6c4cac1e17d35180b9df5f0d8710fa6d)
+        ;
+
+        
+    
+    
+            marker_eb927e79211fa685f88661ad4f388a6b.bindTooltip(
+                `<div>
+                     ('Devils Garden', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f756a4935588b90cb5c6984cd1461b14 = L.marker(
+                [43.240799, -122.1009979],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_b06e44cce7301d919670d6d2a63cc220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f756a4935588b90cb5c6984cd1461b14.setIcon(icon_b06e44cce7301d919670d6d2a63cc220);
+        
+    
+        var popup_1d9e0d055c250723b5b1fc7fdde8bd89 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_5744c3a2749e651cbed81ee1bc1c81b6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ2lubmFtb24gQnV0dGUgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkNpbm5hbW9uIEJ1dHRlPC9hPjxicj4KPGk+SGVpZ2h0OiAxOTU2LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1d9e0d055c250723b5b1fc7fdde8bd89.setContent(i_frame_5744c3a2749e651cbed81ee1bc1c81b6);
+        
+
+        marker_f756a4935588b90cb5c6984cd1461b14.bindPopup(popup_1d9e0d055c250723b5b1fc7fdde8bd89)
+        ;
+
+        
+    
+    
+            marker_f756a4935588b90cb5c6984cd1461b14.bindTooltip(
+                `<div>
+                     ('Cinnamon Butte', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52249ecf2d75815185eb29e01a041e72 = L.marker(
+                [43.4719009, -120.7509995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_d3f8621dd160152141fdd6bc14227244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_52249ecf2d75815185eb29e01a041e72.setIcon(icon_d3f8621dd160152141fdd6bc14227244);
+        
+    
+        var popup_e69fbc1fbd439e6ac9bbcfd407008724 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_3b1e0f05a720873eb41cadd0a661268c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU3F1YXcgUmlkZ2UgTGF2YSBGaWVsZCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+U3F1YXcgUmlkZ2UgTGF2YSBGaWVsZDwvYT48YnI+CjxpPkhlaWdodDogMTcxMS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_e69fbc1fbd439e6ac9bbcfd407008724.setContent(i_frame_3b1e0f05a720873eb41cadd0a661268c);
+        
+
+        marker_52249ecf2d75815185eb29e01a041e72.bindPopup(popup_e69fbc1fbd439e6ac9bbcfd407008724)
+        ;
+
+        
+    
+    
+            marker_52249ecf2d75815185eb29e01a041e72.bindTooltip(
+                `<div>
+                     ('Squaw Ridge Lava Field', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9de995abb41ec3e15854b785f69e376d = L.marker(
+                [43.3609009, -120.6610031],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_212628b99b2c9e8e279a1469d20d96da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9de995abb41ec3e15854b785f69e376d.setIcon(icon_212628b99b2c9e8e279a1469d20d96da);
+        
+    
+        var popup_93aef93cdf8e2cec081ea77aea35138f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_e4ade75e33c94381f1802f0e6bc34cde = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRm91ciBDcmF0ZXJzIExhdmEgRmllbGQgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkZvdXIgQ3JhdGVycyBMYXZhIEZpZWxkPC9hPjxicj4KPGk+SGVpZ2h0OiAxNTAxLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_93aef93cdf8e2cec081ea77aea35138f.setContent(i_frame_e4ade75e33c94381f1802f0e6bc34cde);
+        
+
+        marker_9de995abb41ec3e15854b785f69e376d.bindPopup(popup_93aef93cdf8e2cec081ea77aea35138f)
+        ;
+
+        
+    
+    
+            marker_9de995abb41ec3e15854b785f69e376d.bindTooltip(
+                `<div>
+                     ('Four Craters Lava Field', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb673dbb0a32e5c6a3f177090da9d666 = L.marker(
+                [42.9299011, -122.1210022],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_2ecb2c3ec90d55fcc6cb670d935f2016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bb673dbb0a32e5c6a3f177090da9d666.setIcon(icon_2ecb2c3ec90d55fcc6cb670d935f2016);
+        
+    
+        var popup_38c872a1b33119ed490580a9d8af145d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_78e44ba2f3112ab4e2bd4ea99de45226 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ3JhdGVyIExha2Ugdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkNyYXRlciBMYWtlPC9hPjxicj4KPGk+SGVpZ2h0OiAyNDg3LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_38c872a1b33119ed490580a9d8af145d.setContent(i_frame_78e44ba2f3112ab4e2bd4ea99de45226);
+        
+
+        marker_bb673dbb0a32e5c6a3f177090da9d666.bindPopup(popup_38c872a1b33119ed490580a9d8af145d)
+        ;
+
+        
+    
+    
+            marker_bb673dbb0a32e5c6a3f177090da9d666.bindTooltip(
+                `<div>
+                     ('Crater Lake', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74fd31741a52dc062909a94a8071f56c = L.marker(
+                [44.4299011, -110.6709976],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_8616459ae3676e6689a0d8ff66281a2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_74fd31741a52dc062909a94a8071f56c.setIcon(icon_8616459ae3676e6689a0d8ff66281a2c);
+        
+    
+        var popup_55bbabc4bf8e1ee194e5ab1e9e9c75d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_d418c49f3a4c73347b3c727b6167f669 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyWWVsbG93c3RvbmUgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlllbGxvd3N0b25lPC9hPjxicj4KPGk+SGVpZ2h0OiAyODA1LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_55bbabc4bf8e1ee194e5ab1e9e9c75d5.setContent(i_frame_d418c49f3a4c73347b3c727b6167f669);
+        
+
+        marker_74fd31741a52dc062909a94a8071f56c.bindPopup(popup_55bbabc4bf8e1ee194e5ab1e9e9c75d5)
+        ;
+
+        
+    
+    
+            marker_74fd31741a52dc062909a94a8071f56c.bindTooltip(
+                `<div>
+                     ('Yellowstone', 'US-Wyoming')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d8bb6fcfd29ae003f4986949f91f258 = L.marker(
+                [43.0998993, -118.7509995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_9ad4d1e50e9906a29ef533fdeef60ff9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7d8bb6fcfd29ae003f4986949f91f258.setIcon(icon_9ad4d1e50e9906a29ef533fdeef60ff9);
+        
+    
+        var popup_27f20ea90274065598755fe5db0c674d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_fc61c8452a2f49216262b0841c6fc43e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRGlhbW9uZCBDcmF0ZXJzIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5EaWFtb25kIENyYXRlcnM8L2E+PGJyPgo8aT5IZWlnaHQ6IDE0MzUuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_27f20ea90274065598755fe5db0c674d.setContent(i_frame_fc61c8452a2f49216262b0841c6fc43e);
+        
+
+        marker_7d8bb6fcfd29ae003f4986949f91f258.bindPopup(popup_27f20ea90274065598755fe5db0c674d)
+        ;
+
+        
+    
+    
+            marker_7d8bb6fcfd29ae003f4986949f91f258.bindTooltip(
+                `<div>
+                     ('Diamond Craters', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4d14e7015740fb6aa3a3a850c130df0 = L.marker(
+                [43.1498985, -117.4710007],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_7f3317b88deda994ed667730cfc9c246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b4d14e7015740fb6aa3a3a850c130df0.setIcon(icon_7f3317b88deda994ed667730cfc9c246);
+        
+    
+        var popup_921e463bc7a796b26e6bedd3ae1cc7ff = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_c40ba49571fc82ed3701e67896c81d7d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySm9yZGFuIENyYXRlcnMgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkpvcmRhbiBDcmF0ZXJzPC9hPjxicj4KPGk+SGVpZ2h0OiAxNDczLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_921e463bc7a796b26e6bedd3ae1cc7ff.setContent(i_frame_c40ba49571fc82ed3701e67896c81d7d);
+        
+
+        marker_b4d14e7015740fb6aa3a3a850c130df0.bindPopup(popup_921e463bc7a796b26e6bedd3ae1cc7ff)
+        ;
+
+        
+    
+    
+            marker_b4d14e7015740fb6aa3a3a850c130df0.bindTooltip(
+                `<div>
+                     ('Jordan Craters', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6efbde95867b3d2ef31c81a1737cc8a = L.marker(
+                [42.9999008, -117.8010025],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_a799dabe2c0cab67bd6e12c84078e587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a6efbde95867b3d2ef31c81a1737cc8a.setIcon(icon_a799dabe2c0cab67bd6e12c84078e587);
+        
+    
+        var popup_46300043f4772216399a5438345dcb12 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_2b73b3e7596f1f45f8d70e935d5a1fdd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU2FkZGxlIEJ1dHRlIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5TYWRkbGUgQnV0dGU8L2E+PGJyPgo8aT5IZWlnaHQ6IDE3MDAuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_46300043f4772216399a5438345dcb12.setContent(i_frame_2b73b3e7596f1f45f8d70e935d5a1fdd);
+        
+
+        marker_a6efbde95867b3d2ef31c81a1737cc8a.bindPopup(popup_46300043f4772216399a5438345dcb12)
+        ;
+
+        
+    
+    
+            marker_a6efbde95867b3d2ef31c81a1737cc8a.bindTooltip(
+                `<div>
+                     ('Saddle Butte', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b2b74f7e8d7e1cd9754b536b3168ed5 = L.marker(
+                [43.419899, -113.5009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_87155ff6271eb7b7e88b3d25b79f246a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9b2b74f7e8d7e1cd9754b536b3168ed5.setIcon(icon_87155ff6271eb7b7e88b3d25b79f246a);
+        
+    
+        var popup_7676fcbc0cfd688e45f6f4ebf053226d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_b729070fbcc31bceb3a645c38a7f4c89 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ3JhdGVycyBvZiB0aGUgTW9vbiB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+Q3JhdGVycyBvZiB0aGUgTW9vbjwvYT48YnI+CjxpPkhlaWdodDogMjAwNS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_7676fcbc0cfd688e45f6f4ebf053226d.setContent(i_frame_b729070fbcc31bceb3a645c38a7f4c89);
+        
+
+        marker_9b2b74f7e8d7e1cd9754b536b3168ed5.bindPopup(popup_7676fcbc0cfd688e45f6f4ebf053226d)
+        ;
+
+        
+    
+    
+            marker_9b2b74f7e8d7e1cd9754b536b3168ed5.bindTooltip(
+                `<div>
+                     ('Craters of the Moon', 'US-Idaho')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d9539085228538cdc47fbd5edade9f8 = L.marker(
+                [43.4999008, -112.4509964],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_f21521b9200aeb8b4b8e932eba695a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5d9539085228538cdc47fbd5edade9f8.setIcon(icon_f21521b9200aeb8b4b8e932eba695a02);
+        
+    
+        var popup_be6951b55fcb2e38f0befa793378c868 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_58e33dce0be07be05b1ecf136ed27e5f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySGVsbCBIYWxmIEFjcmUgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkhlbGwgSGFsZiBBY3JlPC9hPjxicj4KPGk+SGVpZ2h0OiAxNjMxLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_be6951b55fcb2e38f0befa793378c868.setContent(i_frame_58e33dce0be07be05b1ecf136ed27e5f);
+        
+
+        marker_5d9539085228538cdc47fbd5edade9f8.bindPopup(popup_be6951b55fcb2e38f0befa793378c868)
+        ;
+
+        
+    
+    
+            marker_5d9539085228538cdc47fbd5edade9f8.bindTooltip(
+                `<div>
+                     ('Hell Half Acre', 'US-Idaho')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_701ab9357d775f4f93099395ba758509 = L.marker(
+                [43.1799011, -114.3509979],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_a0b6ec826340264d1bcaf6e9f38f2139 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_701ab9357d775f4f93099395ba758509.setIcon(icon_a0b6ec826340264d1bcaf6e9f38f2139);
+        
+    
+        var popup_a1b2a166a6cfaaab9149955b0bf8e830 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_7f9594c4417aad700a10a12f0bca2ecb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU2hvc2hvbmUgTGF2YSBGaWVsZCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+U2hvc2hvbmUgTGF2YSBGaWVsZDwvYT48YnI+CjxpPkhlaWdodDogMTQ3OC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a1b2a166a6cfaaab9149955b0bf8e830.setContent(i_frame_7f9594c4417aad700a10a12f0bca2ecb);
+        
+
+        marker_701ab9357d775f4f93099395ba758509.bindPopup(popup_a1b2a166a6cfaaab9149955b0bf8e830)
+        ;
+
+        
+    
+    
+            marker_701ab9357d775f4f93099395ba758509.bindTooltip(
+                `<div>
+                     ('Shoshone Lava Field', 'US-Idaho')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd62585a0bf4ed6d8d843fd009f14c90 = L.marker(
+                [42.6058998, -117.5810013],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e302b146662e356ff9fff0ea6a31ad15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fd62585a0bf4ed6d8d843fd009f14c90.setIcon(icon_e302b146662e356ff9fff0ea6a31ad15);
+        
+    
+        var popup_074ba2e0029b965a9cee182c5a07cb1e = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_8d7d03a7f603485a53cd4c27e98e4c23 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySmFja2llcyBCdXR0ZSB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+SmFja2llcyBCdXR0ZTwvYT48YnI+CjxpPkhlaWdodDogMTQxOC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_074ba2e0029b965a9cee182c5a07cb1e.setContent(i_frame_8d7d03a7f603485a53cd4c27e98e4c23);
+        
+
+        marker_fd62585a0bf4ed6d8d843fd009f14c90.bindPopup(popup_074ba2e0029b965a9cee182c5a07cb1e)
+        ;
+
+        
+    
+    
+            marker_fd62585a0bf4ed6d8d843fd009f14c90.bindTooltip(
+                `<div>
+                     ('Jackies Butte', 'US-Oregon')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_013a2d67dcfffba7a255306b4567090b = L.marker(
+                [41.5798988, -121.5709991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_665ae56c616da650db04e52fcc190830 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_013a2d67dcfffba7a255306b4567090b.setIcon(icon_665ae56c616da650db04e52fcc190830);
+        
+    
+        var popup_be267b5ea962be9d96bf91e40b49eed2 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_ff54fe6b88ae947ac493e762e73b3a5a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTWVkaWNpbmUgTGFrZSB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+TWVkaWNpbmUgTGFrZTwvYT48YnI+CjxpPkhlaWdodDogMjQxMi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_be267b5ea962be9d96bf91e40b49eed2.setContent(i_frame_ff54fe6b88ae947ac493e762e73b3a5a);
+        
+
+        marker_013a2d67dcfffba7a255306b4567090b.bindPopup(popup_be267b5ea962be9d96bf91e40b49eed2)
+        ;
+
+        
+    
+    
+            marker_013a2d67dcfffba7a255306b4567090b.bindTooltip(
+                `<div>
+                     ('Medicine Lake', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56f2dd440bb0093eb2a6438dcc5c4351 = L.marker(
+                [42.8799019, -113.2210007],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_65aff7dfb3ad023ab9ee9ac5bc64b80e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_56f2dd440bb0093eb2a6438dcc5c4351.setIcon(icon_65aff7dfb3ad023ab9ee9ac5bc64b80e);
+        
+    
+        var popup_5add6e64885832c66b8a07024f5678aa = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_ba597f66e116c9e544c7efc1cfa2ad1b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyV2FwaSBMYXZhIEZpZWxkIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5XYXBpIExhdmEgRmllbGQ8L2E+PGJyPgo8aT5IZWlnaHQ6IDE2MDQuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5add6e64885832c66b8a07024f5678aa.setContent(i_frame_ba597f66e116c9e544c7efc1cfa2ad1b);
+        
+
+        marker_56f2dd440bb0093eb2a6438dcc5c4351.bindPopup(popup_5add6e64885832c66b8a07024f5678aa)
+        ;
+
+        
+    
+    
+            marker_56f2dd440bb0093eb2a6438dcc5c4351.bindTooltip(
+                `<div>
+                     ('Wapi Lava Field', 'US-Idaho')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa4a6040fce9de2fe77f0a88547986f5 = L.marker(
+                [41.419899, -122.2009964],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_b99390d2e5a4010b1342fbd9d5661e8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aa4a6040fce9de2fe77f0a88547986f5.setIcon(icon_b99390d2e5a4010b1342fbd9d5661e8f);
+        
+    
+        var popup_c157559286fd9022139648d75aa0d2dc = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_af6503cd1cc1bd5ec8e10fa8bfa7742f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU2hhc3RhIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5TaGFzdGE8L2E+PGJyPgo8aT5IZWlnaHQ6IDQzMTcuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_c157559286fd9022139648d75aa0d2dc.setContent(i_frame_af6503cd1cc1bd5ec8e10fa8bfa7742f);
+        
+
+        marker_aa4a6040fce9de2fe77f0a88547986f5.bindPopup(popup_c157559286fd9022139648d75aa0d2dc)
+        ;
+
+        
+    
+    
+            marker_aa4a6040fce9de2fe77f0a88547986f5.bindTooltip(
+                `<div>
+                     ('Shasta', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbb13bfa908b7f42c3cf66dc723f5b7f = L.marker(
+                [41.1778984, -121.4410019],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_6302f2ec01da800e43ef30de62137524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cbb13bfa908b7f42c3cf66dc723f5b7f.setIcon(icon_6302f2ec01da800e43ef30de62137524);
+        
+    
+        var popup_92823265ebdea5d6316ad3e841bfeac1 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_6eab3de0c32c2f85fd044174b0a8c24a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQnJ1c2h5IEJ1dHRlIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5CcnVzaHkgQnV0dGU8L2E+PGJyPgo8aT5IZWlnaHQ6IDExNzQuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_92823265ebdea5d6316ad3e841bfeac1.setContent(i_frame_6eab3de0c32c2f85fd044174b0a8c24a);
+        
+
+        marker_cbb13bfa908b7f42c3cf66dc723f5b7f.bindPopup(popup_92823265ebdea5d6316ad3e841bfeac1)
+        ;
+
+        
+    
+    
+            marker_cbb13bfa908b7f42c3cf66dc723f5b7f.bindTooltip(
+                `<div>
+                     ('Brushy Butte', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55af8ed14ab50e91013fa22f504aa88b = L.marker(
+                [40.9548988, -121.3610001],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_075fea132048fc4fd14b63bd414634bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_55af8ed14ab50e91013fa22f504aa88b.setIcon(icon_075fea132048fc4fd14b63bd414634bd);
+        
+    
+        var popup_4d16c2a748545dbbe25c5966a26af890 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_09c98b9ded9e2b819d13a32485318cca = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmlnIENhdmUgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkJpZyBDYXZlPC9hPjxicj4KPGk+SGVpZ2h0OiAxMjU5LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_4d16c2a748545dbbe25c5966a26af890.setContent(i_frame_09c98b9ded9e2b819d13a32485318cca);
+        
+
+        marker_55af8ed14ab50e91013fa22f504aa88b.bindPopup(popup_4d16c2a748545dbbe25c5966a26af890)
+        ;
+
+        
+    
+    
+            marker_55af8ed14ab50e91013fa22f504aa88b.bindTooltip(
+                `<div>
+                     ('Big Cave', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd4071a4a6027704e8dac33310bcb85c = L.marker(
+                [40.7798996, -121.6009979],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_3a8edbf3a46b19a502e176592a2821a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bd4071a4a6027704e8dac33310bcb85c.setIcon(icon_3a8edbf3a46b19a502e176592a2821a5);
+        
+    
+        var popup_98545983a256dce1b07242801d61c231 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_5c7e34d486276986246e32d0eb42832d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyVHdpbiBCdXR0ZXMgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlR3aW4gQnV0dGVzPC9hPjxicj4KPGk+SGVpZ2h0OiAxNjMxLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_98545983a256dce1b07242801d61c231.setContent(i_frame_5c7e34d486276986246e32d0eb42832d);
+        
+
+        marker_bd4071a4a6027704e8dac33310bcb85c.bindPopup(popup_98545983a256dce1b07242801d61c231)
+        ;
+
+        
+    
+    
+            marker_bd4071a4a6027704e8dac33310bcb85c.bindTooltip(
+                `<div>
+                     ('Twin Buttes', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87834f632603e8bd3f14b726d585e8fc = L.marker(
+                [40.6799011, -121.5510025],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_c6771961e34ac1de61e8b409245362f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_87834f632603e8bd3f14b726d585e8fc.setIcon(icon_c6771961e34ac1de61e8b409245362f6);
+        
+    
+        var popup_be71209e519897dcefe6c836125b1abd = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_80c7126cc9174ee6135caf951ad2f3b2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyVHVtYmxlIEJ1dHRlcyB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+VHVtYmxlIEJ1dHRlczwvYT48YnI+CjxpPkhlaWdodDogMjE5MS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_be71209e519897dcefe6c836125b1abd.setContent(i_frame_80c7126cc9174ee6135caf951ad2f3b2);
+        
+
+        marker_87834f632603e8bd3f14b726d585e8fc.bindPopup(popup_be71209e519897dcefe6c836125b1abd)
+        ;
+
+        
+    
+    
+            marker_87834f632603e8bd3f14b726d585e8fc.bindTooltip(
+                `<div>
+                     ('Tumble Buttes', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c686ae6a5c95e5c05469dbdaf4bd1876 = L.marker(
+                [40.6299019, -120.8310013],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_2bc6e18edef60e2b26fb827403418e64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c686ae6a5c95e5c05469dbdaf4bd1876.setIcon(icon_2bc6e18edef60e2b26fb827403418e64);
+        
+    
+        var popup_315beaf1394211f224d4004a121f14c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_30b5f60922f91f493cf6480b34dcc73f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRWFnbGUgTGFrZSBGaWVsZCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+RWFnbGUgTGFrZSBGaWVsZDwvYT48YnI+CjxpPkhlaWdodDogMTY1Mi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_315beaf1394211f224d4004a121f14c7.setContent(i_frame_30b5f60922f91f493cf6480b34dcc73f);
+        
+
+        marker_c686ae6a5c95e5c05469dbdaf4bd1876.bindPopup(popup_315beaf1394211f224d4004a121f14c7)
+        ;
+
+        
+    
+    
+            marker_c686ae6a5c95e5c05469dbdaf4bd1876.bindTooltip(
+                `<div>
+                     ('Eagle Lake Field', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f674520bbb1b79a3422e8446fd1a8c50 = L.marker(
+                [40.4919014, -121.5009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_90940c674ade4efe37f48d1c566ba67a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f674520bbb1b79a3422e8446fd1a8c50.setIcon(icon_90940c674ade4efe37f48d1c566ba67a);
+        
+    
+        var popup_da013d87979ae2f09fb1c8a3fcabc166 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_1fe59a561db55b346957bc6f2d13dfa1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTGFzc2VuIFZvbGMgQ2VudGVyIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5MYXNzZW4gVm9sYyBDZW50ZXI8L2E+PGJyPgo8aT5IZWlnaHQ6IDMxODcuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_da013d87979ae2f09fb1c8a3fcabc166.setContent(i_frame_1fe59a561db55b346957bc6f2d13dfa1);
+        
+
+        marker_f674520bbb1b79a3422e8446fd1a8c50.bindPopup(popup_da013d87979ae2f09fb1c8a3fcabc166)
+        ;
+
+        
+    
+    
+            marker_f674520bbb1b79a3422e8446fd1a8c50.bindTooltip(
+                `<div>
+                     ('Lassen Volc Center', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7039ab536914187fe65e27fc670a942 = L.marker(
+                [38.9698982, -122.7710037],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_f8092d1311da5f444230b6520bd43ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b7039ab536914187fe65e27fc670a942.setIcon(icon_f8092d1311da5f444230b6520bd43ff4);
+        
+    
+        var popup_ea673d6fc91258694b0e8b615f77d876 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_51155b22375d7dca208064b8ce07dcb6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ2xlYXIgTGFrZSB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+Q2xlYXIgTGFrZTwvYT48YnI+CjxpPkhlaWdodDogMTQzOS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_ea673d6fc91258694b0e8b615f77d876.setContent(i_frame_51155b22375d7dca208064b8ce07dcb6);
+        
+
+        marker_b7039ab536914187fe65e27fc670a942.bindPopup(popup_ea673d6fc91258694b0e8b615f77d876)
+        ;
+
+        
+    
+    
+            marker_b7039ab536914187fe65e27fc670a942.bindTooltip(
+                `<div>
+                     ('Clear Lake', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23db771e7b7f9893ecf05002e7ae1c12 = L.marker(
+                [39.3749008, -119.7210007],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_61fe1c534e62de56b44bc2c5723f9d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_23db771e7b7f9893ecf05002e7ae1c12.setIcon(icon_61fe1c534e62de56b44bc2c5723f9d2e);
+        
+    
+        var popup_c9468d478b7882b7ead6b5aceee2d1fa = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_2f9f2b2505a384ef7d78e168aeebd2e6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU3RlYW1ib2F0IFNwcmluZ3Mgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlN0ZWFtYm9hdCBTcHJpbmdzPC9hPjxicj4KPGk+SGVpZ2h0OiAxNDE1LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_c9468d478b7882b7ead6b5aceee2d1fa.setContent(i_frame_2f9f2b2505a384ef7d78e168aeebd2e6);
+        
+
+        marker_23db771e7b7f9893ecf05002e7ae1c12.bindPopup(popup_c9468d478b7882b7ead6b5aceee2d1fa)
+        ;
+
+        
+    
+    
+            marker_23db771e7b7f9893ecf05002e7ae1c12.bindTooltip(
+                `<div>
+                     ('Steamboat Springs', 'US-Nevada')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc38c12a311f90eb3e10f63a640b0d31 = L.marker(
+                [39.6500015, -107.0309982],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_ba6d126f16758cb0314f25e2b9a39223 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc38c12a311f90eb3e10f63a640b0d31.setIcon(icon_ba6d126f16758cb0314f25e2b9a39223);
+        
+    
+        var popup_b8f9d9425352e7c949d21d938ea0d7e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_9936f0633e5cce3fa8175aef59bf8b66 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyRG90c2VybyB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+RG90c2VybzwvYT48YnI+CjxpPkhlaWdodDogMjIzMC4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_b8f9d9425352e7c949d21d938ea0d7e3.setContent(i_frame_9936f0633e5cce3fa8175aef59bf8b66);
+        
+
+        marker_dc38c12a311f90eb3e10f63a640b0d31.bindPopup(popup_b8f9d9425352e7c949d21d938ea0d7e3)
+        ;
+
+        
+    
+    
+            marker_dc38c12a311f90eb3e10f63a640b0d31.bindTooltip(
+                `<div>
+                     ('Dotsero', 'US-Colorado')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30e34de6c625fa703404ff99d0aa4674 = L.marker(
+                [37.9999008, -119.0309982],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_aa988b1d2a6eebbb63236e85ae1df227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_30e34de6c625fa703404ff99d0aa4674.setIcon(icon_aa988b1d2a6eebbb63236e85ae1df227);
+        
+    
+        var popup_a3b3e9c68cf5fb52f0309a0a257dd7dd = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_573c58bca450152be4c39b72c0841d43 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTW9ubyBMYWtlIFZvbGMgRmllbGQgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPk1vbm8gTGFrZSBWb2xjIEZpZWxkPC9hPjxicj4KPGk+SGVpZ2h0OiAyMTIxLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a3b3e9c68cf5fb52f0309a0a257dd7dd.setContent(i_frame_573c58bca450152be4c39b72c0841d43);
+        
+
+        marker_30e34de6c625fa703404ff99d0aa4674.bindPopup(popup_a3b3e9c68cf5fb52f0309a0a257dd7dd)
+        ;
+
+        
+    
+    
+            marker_30e34de6c625fa703404ff99d0aa4674.bindTooltip(
+                `<div>
+                     ('Mono Lake Volc Field', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a139e794eeceac844ca9b414077c8172 = L.marker(
+                [38.9700012, -112.5009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_de6853df9fc3c4b75874a111bc334dbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a139e794eeceac844ca9b414077c8172.setIcon(icon_de6853df9fc3c4b75874a111bc334dbe);
+        
+    
+        var popup_a8a07926e1b8c5b80c6a518545df8715 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_e2ba6a7a7963f5344e6cc1efc2b14202 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmxhY2sgUm9jayBEZXNlcnQgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkJsYWNrIFJvY2sgRGVzZXJ0PC9hPjxicj4KPGk+SGVpZ2h0OiAxODAwLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a8a07926e1b8c5b80c6a518545df8715.setContent(i_frame_e2ba6a7a7963f5344e6cc1efc2b14202);
+        
+
+        marker_a139e794eeceac844ca9b414077c8172.bindPopup(popup_a8a07926e1b8c5b80c6a518545df8715)
+        ;
+
+        
+    
+    
+            marker_a139e794eeceac844ca9b414077c8172.bindTooltip(
+                `<div>
+                     ('Black Rock Desert', 'US-Utah')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b0e6c3b58fa718526c83d016baa83c8 = L.marker(
+                [37.8799019, -119.0009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e677c08b760ed96e36445521d8f34b44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9b0e6c3b58fa718526c83d016baa83c8.setIcon(icon_e677c08b760ed96e36445521d8f34b44);
+        
+    
+        var popup_88ee667eab952835e272fdc22dad25c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_880c6d7d003fcfd70bda82d057a7d60a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTW9ubyBDcmF0ZXJzIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5Nb25vIENyYXRlcnM8L2E+PGJyPgo8aT5IZWlnaHQ6IDI3OTYuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_88ee667eab952835e272fdc22dad25c4.setContent(i_frame_880c6d7d003fcfd70bda82d057a7d60a);
+        
+
+        marker_9b0e6c3b58fa718526c83d016baa83c8.bindPopup(popup_88ee667eab952835e272fdc22dad25c4)
+        ;
+
+        
+    
+    
+            marker_9b0e6c3b58fa718526c83d016baa83c8.bindTooltip(
+                `<div>
+                     ('Mono Craters', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3a9232dc8a423268ecd66c78cbad452 = L.marker(
+                [37.6918983, -119.0210037],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_2f66ad7c68a9cb78d03242a570b827a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b3a9232dc8a423268ecd66c78cbad452.setIcon(icon_2f66ad7c68a9cb78d03242a570b827a5);
+        
+    
+        var popup_768d12b73d333e561b1b668d6cf55468 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_f99fca76ef9fafdf788dfa25075a68d4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIySW55byBDcmF0ZXJzIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5JbnlvIENyYXRlcnM8L2E+PGJyPgo8aT5IZWlnaHQ6IDI2MjkuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_768d12b73d333e561b1b668d6cf55468.setContent(i_frame_f99fca76ef9fafdf788dfa25075a68d4);
+        
+
+        marker_b3a9232dc8a423268ecd66c78cbad452.bindPopup(popup_768d12b73d333e561b1b668d6cf55468)
+        ;
+
+        
+    
+    
+            marker_b3a9232dc8a423268ecd66c78cbad452.bindTooltip(
+                `<div>
+                     ('Inyo Craters', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75ab6f1f88f721f3523a53d3ae555e36 = L.marker(
+                [37.6999016, -118.8710022],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_a54ef887d743ffe2cae5a727f579e8df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_75ab6f1f88f721f3523a53d3ae555e36.setIcon(icon_a54ef887d743ffe2cae5a727f579e8df);
+        
+    
+        var popup_03cd6a9a32beaf8dbbc4ff9a574b430b = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_cb5d2d20c8183c825d5c2c17ddeff2d1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTG9uZyBWYWxsZXkgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkxvbmcgVmFsbGV5PC9hPjxicj4KPGk+SGVpZ2h0OiAzMzkwLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_03cd6a9a32beaf8dbbc4ff9a574b430b.setContent(i_frame_cb5d2d20c8183c825d5c2c17ddeff2d1);
+        
+
+        marker_75ab6f1f88f721f3523a53d3ae555e36.bindPopup(popup_03cd6a9a32beaf8dbbc4ff9a574b430b)
+        ;
+
+        
+    
+    
+            marker_75ab6f1f88f721f3523a53d3ae555e36.bindTooltip(
+                `<div>
+                     ('Long Valley', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22b601ff2d50813580bf05cccd56b602 = L.marker(
+                [37.5798988, -119.0510025],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_dd5a10f32d557cc3152018a51182fe2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_22b601ff2d50813580bf05cccd56b602.setIcon(icon_dd5a10f32d557cc3152018a51182fe2b);
+        
+    
+        var popup_5a3b4c4de21e0d56d81122d4e042ba51 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_1ae76fbb38249d68cdb9cbfda873b18e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyUmVkIENvbmVzIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5SZWQgQ29uZXM8L2E+PGJyPgo8aT5IZWlnaHQ6IDI3NDguMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5a3b4c4de21e0d56d81122d4e042ba51.setContent(i_frame_1ae76fbb38249d68cdb9cbfda873b18e);
+        
+
+        marker_22b601ff2d50813580bf05cccd56b602.bindPopup(popup_5a3b4c4de21e0d56d81122d4e042ba51)
+        ;
+
+        
+    
+    
+            marker_22b601ff2d50813580bf05cccd56b602.bindTooltip(
+                `<div>
+                     ('Red Cones', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd67e49070555e77e8b6db8936a4aa13 = L.marker(
+                [37.0199013, -117.4509964],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_f493bbd28bdafe29f1c4f77a0beeabdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cd67e49070555e77e8b6db8936a4aa13.setIcon(icon_f493bbd28bdafe29f1c4f77a0beeabdf);
+        
+    
+        var popup_1e0a90529903a46596b97464ddfdf9ca = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_98e6b2e3282ab5e98fe98a8d412274d5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyVWJlaGViZSBDcmF0ZXJzIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5VYmVoZWJlIENyYXRlcnM8L2E+PGJyPgo8aT5IZWlnaHQ6IDc1Mi4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1e0a90529903a46596b97464ddfdf9ca.setContent(i_frame_98e6b2e3282ab5e98fe98a8d412274d5);
+        
+
+        marker_cd67e49070555e77e8b6db8936a4aa13.bindPopup(popup_1e0a90529903a46596b97464ddfdf9ca)
+        ;
+
+        
+    
+    
+            marker_cd67e49070555e77e8b6db8936a4aa13.bindTooltip(
+                `<div>
+                     ('Ubehebe Craters', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a564a51d469513a4c35cacf2d6428f9 = L.marker(
+                [37.5800018, -112.6709976],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_56f26c151058f242cdd288108c488d7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6a564a51d469513a4c35cacf2d6428f9.setIcon(icon_56f26c151058f242cdd288108c488d7f);
+        
+    
+        var popup_55aacfd3a06f19cfa86f87ab672f95a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_3db3126ac2eb2a7b959914f9c3228ca2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTWFya2FndW50IFBsYXRlYXUgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPk1hcmthZ3VudCBQbGF0ZWF1PC9hPjxicj4KPGk+SGVpZ2h0OiAyODQwLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_55aacfd3a06f19cfa86f87ab672f95a6.setContent(i_frame_3db3126ac2eb2a7b959914f9c3228ca2);
+        
+
+        marker_6a564a51d469513a4c35cacf2d6428f9.bindPopup(popup_55aacfd3a06f19cfa86f87ab672f95a6)
+        ;
+
+        
+    
+    
+            marker_6a564a51d469513a4c35cacf2d6428f9.bindTooltip(
+                `<div>
+                     ('Markagunt Plateau', 'US-Utah')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8deb1d1fd5fc94297db5b38377903e9b = L.marker(
+                [37.257, -113.6210022],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_2b39dfab3f8e3a2d595b1b02ed55b66c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8deb1d1fd5fc94297db5b38377903e9b.setIcon(icon_2b39dfab3f8e3a2d595b1b02ed55b66c);
+        
+    
+        var popup_f93ca85fe279586a41dc34ea9441197f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_d71c0dcb3f877837ca1675c5f227d5b3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU2FudGEgQ2xhcmEgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlNhbnRhIENsYXJhPC9hPjxicj4KPGk+SGVpZ2h0OiAxNDY1LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f93ca85fe279586a41dc34ea9441197f.setContent(i_frame_d71c0dcb3f877837ca1675c5f227d5b3);
+        
+
+        marker_8deb1d1fd5fc94297db5b38377903e9b.bindPopup(popup_f93ca85fe279586a41dc34ea9441197f)
+        ;
+
+        
+    
+    
+            marker_8deb1d1fd5fc94297db5b38377903e9b.bindTooltip(
+                `<div>
+                     ('Santa Clara', 'US-Utah')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08aacaa1c4589116e512664d00c25068 = L.marker(
+                [37.3279991, -112.401001],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_0eb5dd94cdffd7f15ddeee371e2e9959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_08aacaa1c4589116e512664d00c25068.setIcon(icon_0eb5dd94cdffd7f15ddeee371e2e9959);
+        
+    
+        var popup_8a4bac0c22f0c86daa0bb1e48700c719 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_a41668be902f1368e28cee120b3de000 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQmFsZCBLbm9sbCB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+QmFsZCBLbm9sbDwvYT48YnI+CjxpPkhlaWdodDogMjEzNS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_8a4bac0c22f0c86daa0bb1e48700c719.setContent(i_frame_a41668be902f1368e28cee120b3de000);
+        
+
+        marker_08aacaa1c4589116e512664d00c25068.bindPopup(popup_8a4bac0c22f0c86daa0bb1e48700c719)
+        ;
+
+        
+    
+    
+            marker_08aacaa1c4589116e512664d00c25068.bindTooltip(
+                `<div>
+                     ('Bald Knoll', 'US-Utah')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc0caa70a3f9b03ca7e87a10511e44de = L.marker(
+                [36.3578987, -118.3209991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_702c0070a682a9e3960daff5eb8fbf5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cc0caa70a3f9b03ca7e87a10511e44de.setIcon(icon_702c0070a682a9e3960daff5eb8fbf5d);
+        
+    
+        var popup_bd3e4fdd3e6fa52b742add2e6d7e3c42 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_fd988b380e4b472f604419531fb22e51 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyR29sZGVuIFRyb3V0IENyZWVrIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5Hb2xkZW4gVHJvdXQgQ3JlZWs8L2E+PGJyPgo8aT5IZWlnaHQ6IDI4ODYuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_bd3e4fdd3e6fa52b742add2e6d7e3c42.setContent(i_frame_fd988b380e4b472f604419531fb22e51);
+        
+
+        marker_cc0caa70a3f9b03ca7e87a10511e44de.bindPopup(popup_bd3e4fdd3e6fa52b742add2e6d7e3c42)
+        ;
+
+        
+    
+    
+            marker_cc0caa70a3f9b03ca7e87a10511e44de.bindTooltip(
+                `<div>
+                     ('Golden Trout Creek', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_749848b5a753dcb8976fc2b21f91c6c6 = L.marker(
+                [36.0298996, -117.8209991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_ba1238000843dba30352146cd919b4d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_749848b5a753dcb8976fc2b21f91c6c6.setIcon(icon_ba1238000843dba30352146cd919b4d7);
+        
+    
+        var popup_88f22a1958d7593610995de8732f2a87 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_ed1c11efb7344f0746f02090ddfe4ae9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ29zbyBWb2xjIEZpZWxkIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5Db3NvIFZvbGMgRmllbGQ8L2E+PGJyPgo8aT5IZWlnaHQ6IDI0MDAuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_88f22a1958d7593610995de8732f2a87.setContent(i_frame_ed1c11efb7344f0746f02090ddfe4ae9);
+        
+
+        marker_749848b5a753dcb8976fc2b21f91c6c6.bindPopup(popup_88f22a1958d7593610995de8732f2a87)
+        ;
+
+        
+    
+    
+            marker_749848b5a753dcb8976fc2b21f91c6c6.bindTooltip(
+                `<div>
+                     ('Coso Volc Field', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7caadd24354f925972d88337ff913da4 = L.marker(
+                [36.3800011, -113.1309967],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_3ac929daa559bc51f28cc75d6a970722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7caadd24354f925972d88337ff913da4.setIcon(icon_3ac929daa559bc51f28cc75d6a970722);
+        
+    
+        var popup_320298daa29e5257da56d934a618a3d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_56abe860d2185498e0a43b72a8890027 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyVWlua2FyZXQgRmllbGQgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlVpbmthcmV0IEZpZWxkPC9hPjxicj4KPGk+SGVpZ2h0OiAxNTU1LjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_320298daa29e5257da56d934a618a3d9.setContent(i_frame_56abe860d2185498e0a43b72a8890027);
+        
+
+        marker_7caadd24354f925972d88337ff913da4.bindPopup(popup_320298daa29e5257da56d934a618a3d9)
+        ;
+
+        
+    
+    
+            marker_7caadd24354f925972d88337ff913da4.bindTooltip(
+                `<div>
+                     ('Uinkaret Field', 'US-Arizona')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48b95be7dee7ff410002f55a28b8a729 = L.marker(
+                [34.75, -116.6210022],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e1e4b3fceed20510162fa2bf4197bb96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_48b95be7dee7ff410002f55a28b8a729.setIcon(icon_e1e4b3fceed20510162fa2bf4197bb96);
+        
+    
+        var popup_5e4a30135d38d94ff8088b188a246cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_e5c99719e4cae1d050f39c291792112a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyTGF2aWMgTGFrZSB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+TGF2aWMgTGFrZTwvYT48YnI+CjxpPkhlaWdodDogMTQ5NS4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5e4a30135d38d94ff8088b188a246cd4.setContent(i_frame_e5c99719e4cae1d050f39c291792112a);
+        
+
+        marker_48b95be7dee7ff410002f55a28b8a729.bindPopup(popup_5e4a30135d38d94ff8088b188a246cd4)
+        ;
+
+        
+    
+    
+            marker_48b95be7dee7ff410002f55a28b8a729.bindTooltip(
+                `<div>
+                     ('Lavic Lake', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3f7ff9822847ff2a626f05e5e1af3c8 = L.marker(
+                [35.8699989, -106.5709991],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_f86b00a1be1b7d780caf10f45667214d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f3f7ff9822847ff2a626f05e5e1af3c8.setIcon(icon_f86b00a1be1b7d780caf10f45667214d);
+        
+    
+        var popup_f0a13fb10947ef8737d311de2adf1b4c = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_cd832bf0788b9670016c63bbb1f43f0f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyVmFsbGVzIENhbGRlcmEgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPlZhbGxlcyBDYWxkZXJhPC9hPjxicj4KPGk+SGVpZ2h0OiAzNDMwLjAgbSA8L2k+" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f0a13fb10947ef8737d311de2adf1b4c.setContent(i_frame_cd832bf0788b9670016c63bbb1f43f0f);
+        
+
+        marker_f3f7ff9822847ff2a626f05e5e1af3c8.bindPopup(popup_f0a13fb10947ef8737d311de2adf1b4c)
+        ;
+
+        
+    
+    
+            marker_f3f7ff9822847ff2a626f05e5e1af3c8.bindTooltip(
+                `<div>
+                     ('Valles Caldera', 'US-New Mexico')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b30ea2ce221605e16516a057512e68f = L.marker(
+                [35.3699989, -111.5009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_802385d47c9756b72d8466426b40e369 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6b30ea2ce221605e16516a057512e68f.setIcon(icon_802385d47c9756b72d8466426b40e369);
+        
+    
+        var popup_1546ec9bc1f2430b953980c5dbe71292 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_327d8d24dfa9f77b394fe75f5f141ca8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyU3Vuc2V0IENyYXRlciB2b2xjYW5vJTIyIiB0YXJnZXQ9Il9ibGFuayI+U3Vuc2V0IENyYXRlcjwvYT48YnI+CjxpPkhlaWdodDogMjQ0Ny4wIG0gPC9pPg==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1546ec9bc1f2430b953980c5dbe71292.setContent(i_frame_327d8d24dfa9f77b394fe75f5f141ca8);
+        
+
+        marker_6b30ea2ce221605e16516a057512e68f.bindPopup(popup_1546ec9bc1f2430b953980c5dbe71292)
+        ;
+
+        
+    
+    
+            marker_6b30ea2ce221605e16516a057512e68f.bindTooltip(
+                `<div>
+                     ('Sunset Crater', 'US-Arizona')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b0493267394b452957d5f2943a41e3d = L.marker(
+                [34.5499992, -115.7809982],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_0d956acbecd087c138106e084efced76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4b0493267394b452957d5f2943a41e3d.setIcon(icon_0d956acbecd087c138106e084efced76);
+        
+    
+        var popup_aa68b8e08dfdeac3aa0d226342869b68 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_42c15a1410a32efd85929356b142907d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQW1ib3kgdm9sY2FubyUyMiIgdGFyZ2V0PSJfYmxhbmsiPkFtYm95PC9hPjxicj4KPGk+SGVpZ2h0OiAyODguMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_aa68b8e08dfdeac3aa0d226342869b68.setContent(i_frame_42c15a1410a32efd85929356b142907d);
+        
+
+        marker_4b0493267394b452957d5f2943a41e3d.bindPopup(popup_aa68b8e08dfdeac3aa0d226342869b68)
+        ;
+
+        
+    
+    
+            marker_4b0493267394b452957d5f2943a41e3d.bindTooltip(
+                `<div>
+                     ('Amboy', 'US-California')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0e5db7566752738a63e9ea9ae5e629b = L.marker(
+                [34.7999992, -108.0009995],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_e5cff1f8cfd9d9535f3a5739deb7dcc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e0e5db7566752738a63e9ea9ae5e629b.setIcon(icon_e5cff1f8cfd9d9535f3a5739deb7dcc4);
+        
+    
+        var popup_5dafffb36ec3f4ace0121682842c981f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_8051c2f40946cea66289cad9e8a209c2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyWnVuaS1CYW5kZXJhIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5adW5pLUJhbmRlcmE8L2E+PGJyPgo8aT5IZWlnaHQ6IDI1NTAuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5dafffb36ec3f4ace0121682842c981f.setContent(i_frame_8051c2f40946cea66289cad9e8a209c2);
+        
+
+        marker_e0e5db7566752738a63e9ea9ae5e629b.bindPopup(popup_5dafffb36ec3f4ace0121682842c981f)
+        ;
+
+        
+    
+    
+            marker_e0e5db7566752738a63e9ea9ae5e629b.bindTooltip(
+                `<div>
+                     ('Zuni-Bandera', 'US-New Mexico')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_123bbe1a3195eb3e0c36778c6a9ebc5a = L.marker(
+                [33.7801018, -105.9309998],
+                {}
+            ).addTo(map_9f2012dfc716b345ae7dc31ffe138a74);
+        
+    
+            var icon_5c65db708a61d680ede1f13bd1c7b6c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_123bbe1a3195eb3e0c36778c6a9ebc5a.setIcon(icon_5c65db708a61d680ede1f13bd1c7b6c2);
+        
+    
+        var popup_25fe9ef8ba6580a057e1531317cfaeae = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_64943e6d5216dbcd3a4b8f4fbbd22255 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGk+Vm9sY2FubyBuYW1lOjxicj48L2k+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9JTIyQ2Fycml6b3pvIHZvbGNhbm8lMjIiIHRhcmdldD0iX2JsYW5rIj5DYXJyaXpvem88L2E+PGJyPgo8aT5IZWlnaHQ6IDE3MzEuMCBtIDwvaT4=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_25fe9ef8ba6580a057e1531317cfaeae.setContent(i_frame_64943e6d5216dbcd3a4b8f4fbbd22255);
+        
+
+        marker_123bbe1a3195eb3e0c36778c6a9ebc5a.bindPopup(popup_25fe9ef8ba6580a057e1531317cfaeae)
+        ;
+
+        
+    
+    
+            marker_123bbe1a3195eb3e0c36778c6a9ebc5a.bindTooltip(
+                `<div>
+                     ('Carrizozo', 'US-New Mexico')
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
